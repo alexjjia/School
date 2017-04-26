@@ -1,0 +1,56 @@
+HOMEWORK 4
+Due Sunday October 9, 5 AM
+
+
+
+Section 1.5
+
+A. Prove using the rules of propositional and predicate equivalence from 
+Rosen that the following equivalences hold. Be sure to do a precise formal 
+proof, with lines justified by equivalence rule names.
+
+(1) Forall x. P(x)   \/  Exists x. ~P(x)   ==  True
+
+(2)  Exists x. P(x)  ==  ~ Forall x. ~ P(x)
+
+B. Express the _negation_ of each of the following formulas so that all 
+negation symbols appear only immediately before predicates:
+
+(1) Exist x. Exist y. P(x,y)   \/   Forall x. Forall z. Q(x,z)
+
+(2) Exist x. Exist y.( Q(x,y)  <->  Q(y,x) )
+
+####################################################################
+Section 1.6 
+
+
+C. For each of the following claims
+
+* either prove they are true using rules of inference of the predicate
+calculus: you may use either Rosen or NatDedn _propositional_ reasoning
+rules, and the Rosen quantifiers rules in Table 6, augmented with my
+restrictions on constant symbols (see handout on inference rules).
+
+* or provide a counter-example, by defining appropriate predicate atoms
+(e.g., {likes(bob,eve),..} in my updated lecture notes); for full credit,
+use the smallest possible universe for the quantifiers.  
+
+[Hint: think first about what the statements say _intuitively_, maybe using
+something familiar instead of predicates P and Q.]
+
+
+a) Exists y.(P(y) /\ Q(y)) |- Exists x.P(x) /\ Exists y.Q(y)
+
+b) Exists y.(P(y) \/ Q(y)) |- Exists x.P(x) /\ Exists x.Q(x)
+
+c)  Forall x.P(x) /\ Forall y.Q(y)  |- Forall z.(P(z) \/ Q(z))
+
+d)  BONUS (hard): Prove    Exist x.(P(x) /\ Q(x)) |- Exists x.P(x) 
+    using only the rules of Forall-INTRO and Forall-ELIM, plus the 
+    equivalence Exists y.R(y)= ~ Forall y.( ~R(y)), as well as the
+    rules of propositional natural deduction. (i.e., you are not
+    allowed to use rules for Exists, because it is only an abbreviation.)
+
+(i.e., The result to be proven is
+   ~ Forall x. ~(P(x) /\ Q(x)) |- ~ Forall  x. ~P(x)
+)

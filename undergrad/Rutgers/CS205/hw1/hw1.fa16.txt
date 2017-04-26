@@ -1,0 +1,48 @@
+DUE Sunday, September 11, 5AM [yes, in the morning, so aim for Saturday night]
+>>Sec. 2.1
+(i) For each of the following sets, determine whether 9 is an element of
+that set (answer with Y or N).
+ (a) {9, 9}
+ (b) {{{9}}, {9}}
+ (c) {9, {9}}
+ (d) {{{9}}}
+
+(ii) For each of the above sets, determine whether {9} is a subset of
+that set (answer with Y or N).
+
+(iii) What is Powerset(Powerset(S)) for S={a,b}
+
+(iv) For each of the following indicate (Yes or No) whether
+   it is the power set of some other set S, and if yes, give S:
+  a) { {} , {2} }
+  b) {}
+  c) { {} , {2} , { {},2 } }
+
+>> Sec. 2.2:
+The proofs of set equality below should NOT use set identities (which were
+not covered in lecture)
+(iv)  Let A, B and C be sets.
+    (a) Prove (A - B) - C is a subset of (A - C)
+    (b) A union (B - A) = A union B
+
+(v)  Let A, B and C be sets. In which of the following cases can you
+conclude that A = B
+    (a) A union C = B union C
+    (b) A intersect C = B intersect C
+    (c) both (a) and (b) above
+
+(vi)  Define the symmetric difference of sets A and B (written as  A [+] B
+here), to be the set of elements which are in either A or B but not in
+both.
+a) What is {b,g,k,m} [+] {a,g,m} ?
+b) What can you say about sets A and B that are subsets of universal set
+   U,    if  A [+] B = U ?
+c)* Determine if  A [+] (B [+] C) = (A [+] B) [+] C either by giving the
+ smallest counter-example, or by giving a proof.
+
+
+BONUS: State and prove a theorem which captures the intuition that the order
+of elements in a set is not relevant. (First express the intuition that _duplicates_
+do not matter by considering the pseudo-math pattern {...,b,...,b,...}, and then
+state this as a slightly different theorem than the one in the class/notes; now
+repeat for _order_)

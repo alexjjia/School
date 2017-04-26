@@ -1,0 +1,103 @@
+HOMEWORK 2
+Due September 25, 5 a.m. (Saturday-to-Sunday night, like last time)
+
+Please submit thru Sakai and check afterwards that your submission is
+indeed there.  Also, please remember that attachments that are not pdf or
+text files, or are not readable will not be graded.
+
+
+>>Section 1.1
+
+(1) Indicate whether each of the following is true or false
+    (a)  if {7}={8} then 1+1=3
+    (b)  if 1+2=3 then dogs can fly
+    (c)  3+3=5 if and only if 1+2=3 
+
+(2) Using letters for simple statements, translate the following compound 
+  English statements into propositional logic formulas
+
+    (a) If Jan wins or if he loses, he will be tired.
+
+	(b) If prices go up, then housing will be plentiful and expensive; but
+	if housing is not expensive then it will be plentiful.
+
+	(c) Either going to bed or going swimming is sufficient condition for
+	changing clothes.; however changing clothes does not mean going
+	swimming.
+
+
+>> Sections 1.1,1.3
+
+3. MOTIVATION: Recal the problem about expressing in Propositional Logic the
+following sentences: 
+
+	"If Michelle wins she will be admired and become rich.  Otherwise, she
+	will be ignored."
+
+We had agreed that the individual sentences could be encoded as 'w ->
+(a/\r)' and '~w -> i'.  When I took a poll of the class, a large majority
+felt that they should be combined as a disjunction: 
+        (w -> (a/\r)) \/ (~w ->i)
+rather than as a conjunction:
+        (w -> (a/\r)) /\ (~w -> i).
+
+Let's explore using the tools of logic to see what happens.  First, since
+the issue is conjunction vs disjunction at the top level, lets eliminate
+the proposition fragment '/\r', thus reducing it from having 4 atomic
+symbols to 3 (hence the truth table having 8 rather than 16 rows).
+
+So here are the questions: 
+
+Let P be the propositional formula (w -> a) \/ (~w -> i), and let Q be the 
+propositional formula (w -> a) /\ (~w -> i).
+
+(a) Construct the truth table terminating with columns for P and for Q.
+
+(b) Which formula among P, or Q, is a tautology?
+
+(c) Prove in a second way that the formula you selected in part (b) is
+  tautology, by using an algebraic proof which shows that it is logically
+  equivalent to True.  You can use _only_ equivalence rules in Figure 6
+  (page 26) of Section 1.3 (also appearing in my notes).  Please be sure to
+  use the proper format, where you justify each line by a rule.
+
+(d) Take the formula that was NOT a tatology (according to what you said 
+in (b) above), and
+  
+	(i) put it into "disjunctive normal form", starting with the
+	distributive laws.  *Make the result be as short as possible (have as
+	few symbols as possible).  Again, please show your derivation of normal
+	DNF using an algebraic proof, as in part (c).  /* This is easy */
+
+    (ii) Give a truth assignment to the symbols {w,a,i} which makes the
+    non-tautology be false. (That is how you can tell it is not a 
+    tautology)
+
+[For your own intuition, no grade: Take the result of part (iv) and expand
+the single letters {w,a,i} into the phrases {'M wins', 'M is admired', 'M
+is ignored'} so you can read outloud the result.  The resulting conjuncts
+represent the possible alternative states of the world represented by the
+original formula.]
+
+(e) Now consider the new formula Y = '(w -> r) /\ (~w -> ~r)'.  Just like
+  in (d(i)), use algebraic equivalences to put it into DNF, and simplify it.
+  /* Again, this is easy. It might explain the intuition that led the
+     class to vote for disjunction.  */
+
+-------------
+(4) The NOR operator is defined as: (p NOR q) is true if and only if both
+  p and q are false.  Show that {NOR} is _functionally complete_.  (I have
+  done in class the case of the NAND operator.)
+
+III. Section 1.6 (up to 'Resolution')
+
+Recall that a "Rosen-style proof" (ones used in the text), uses Rosen
+inference rules in Sec 1.6 (Table 1, {page 72}), together with Rosen's
+equivalences (Table 6, {page 27}, plus the definition of -> and <->).  
+
+(5) Give Rosen-style proofs for the following (you must use at least one
+  rule of inference).
+
+ (i)   p/\q |- p\/q
+ (ii)  ~p   |- (p -> q)
+ (iii)  ((b /\ c) -> (p /\ q)) |- ((b /\ c) -> p)

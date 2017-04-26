@@ -1,0 +1,39 @@
+HOMEWORK 3
+(Natural Deduction Proofs. Predicate Logic formulas, but no proofs.)
+
+Due: Sunday, October 2nd, 5 AM
+
+
+1.  Prove the following formally using a Natural Deduction proof that only
+uses the inference rules on the handout that are on the lecture notes page.  
+(Be sure not to use equivalence rules or Rosen inference rules.)
+ 
+a) p /\ q |- p \/ r
+b) p->~q , q |- ~p
+c) p -> (q -> r) |- (p /\ q) -> r
+d) ~q |- q -> p
+e) p \/ (q /\ r) |- p \/ q
+
+
+
+[For your own benefit, try Rosen-style proofs.  If there is a Rosen
+inference rule or equivalence corresponding to what you are trying to prove
+_do not use it_ -- only use _other_ rules.  DO NOT HAND THESE IN]
+
+2*. Give  Natural Deduction proofs of the following (the proofs are
+much more challenging)
+ 
+a)    A \/ B, ~B \/ C |- A \/ C
+
+b)   A -> B |- ~B -> ~A  [optional bonus]
+
+
+
+3.  Section 1.4, problems on pages 53-56
+# 10  
+# 60 (omit [d])
+
+4. Section 1.5, problems on pages 65-67
+# 10
+# 28 [a,c,e,i,j]
+
