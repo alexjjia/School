@@ -1,0 +1,41 @@
+Computer Architecture Assignment 1: A Partial Tokenizer
+Alex Jia, CS211
+
+Testcases:
+
+1. input:""
+   expected output: ""
+   output: ""
+
+2. input:" 0700 1234 3.14159e-10"
+   expected output: octal 0700
+		    decimal 1234
+		    float 3.14159e-10
+   output: octal 0700
+	   decimal 1234
+	   float 3.14159e-10
+
+3. input: "g 0x00ff"
+   expected output: bad input [whatever "g" is in hex]
+		    hexadecimal: 0x00ff
+   output: bad input [0x1082070]	
+	   hexadecimal 0x00ff
+4. input: "12345"
+   expected output: decimal 12345
+   output: decimal 12345
+
+5. input: "1e+4"
+   expected output: float 1e+4
+   output:	float 1e+4
+
+6. input: "1e 40.2 017 09"
+   expected output: bad input [whatever "1e" is in hex]
+		    float 40.2
+		    octal 017
+		    bad input [whatever"09" is in hex]
+  output: bad input [0x1a17070]
+  	  float 40.2
+	  octal 017
+	  bad input [0x1a170d0]
+
+
